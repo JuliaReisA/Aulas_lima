@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina principal </title>
+
+    <style>
+
+        /*Seletor universal*/
+        * {
+            margin: 0;
+        }
+
+        /*Seletor de tipo, aplicando em uma tag*/
+        p{
+            color:brown;
+        }
+
+       /* Seletor de classe*/
+       .paragrafo{
+           background-color:rgb(228, 19, 85);
+          /* margin: 10px; - Aplica em todas as margens*/
+           /*margin: 10px 40px; - Aplica nas margens 'Laterais' e 'superior e inferior'*/
+           margin: 10px 20px 30px 40px;/*aplica margem top, right, bottom , left*/
+           margin-left: 10px;
+           /* alinha elementos ao centro*/
+           text-align: center;
+
+       }
+
+       .imagem{
+        width: 150px;
+        height: 100px;
+       }
+    </style>
+</head>
+<!-- aplicando css inline cor de fundo -->
+<body style="background-color: blueviolet;">
+    ola mundo!
+    <!--Titulo de nivel 1 ao 6-->
+    <h1>Cabeçalho de nivel 1</h1>
+    <h2>Cabeçalho de nivel 2</h2>
+    <h3>Cabeçalho de nivel 3</h3>
+    <h4>Cabeçalho de nivel 4</h4>
+    <h5>Cabeçalho de nivel 5</h5>
+
+    <!-- Insere uma linha na horizontal -->
+     <hr>
+    <!-- A tag 'p' insere um novo parágrafo -->
+     <p>Este é um        a          parágrafo 
+        <p>Este é um        a          parágrafo 
+     <hr>
+     <!-- A tag br quebra uma linha,
+      ela é uma tag sem fechamento -->
+    <p>Este é um texto muito grande,<br>
+        que eu desejo <br> quebrar a linha</p>
+    <!-- Inserindo um link para
+     abrir uma pagina -->
+     <a href="https://www.sesisp.org.br">Pagina do sesi</a>
+     <!-- Link com atributo _blanck para abrir em outra janela -->
+     <a href="https://www.sp.senai.br/" target="_self" >Senai</a>
+
+     <!-- Tag img para adicionar uma imagem, 
+      o atributo src e preenchido com o caminho da imagem -->
+    <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/10/shrek-e1696623069422.jpeg?w=905">
+    <img src="img/200w.gif">
+
+    <p>Paragrafo com caracter &lt;br&gt;</p>
+    <p>&reg; &trade; &euro; &pound; &yen; &cent; &delta; &uarr;</p>
+
+    <!-- Para inserir emoji use o 
+     hexadecimal do site emojipedia.org. e o
+     codigo vai depois do &#x -->
+     <p>Inserindo um emoji &#x1F60 &#x2764</p>
+
+    <!-- Tags para formatação e enfratização do texto -->
+     <b>Texto em negrito</b></b>
+     <strong>Texto importante</strong></strong>
+     <h1><i>H1 italico</i></h1><br>
+     <em>Texto enfatizado</em><br>
+     <mark>Texto Marcado</mark><br>
+     <h3>Texto <small>Menor</small></h3>
+     <del>Texto Excluido </del><br>
+     <ins>Texto inserido</ins>
+     <p>4<sub>2</sub></p>
+     <p>3<sub>3</sub></p>
+     <u>Texto sublinando</u>
+
+        <!-- Aplicando link em uma imagem -->
+      <a href="https://www.sesisp.org.br"><img src="img/200w.gif" alt=""></a>
+
+      <p style="font-size: xx-large;">Videos do youtube</p>
+      <iframe width="928" height="522" src="https://www.youtube.com/embed/jJc7oz-78lw" title="MÓ FITA - MC Kadu, MC Tuto e Luuky (Web Clipe) DJ Victor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <!-- Aplicando um css interno -->
+
+    <p class= "paragrafo">
+        Logo
+
+        <img class="imagem" src="img/200w.gif" alt="">
+    </p>
+    <hr>
+    <!-- Listas -->
+     <!-- Listas Ordenadas -->
+      <o1>
+
+        <li>Acordar</li>
+        <li>Tomar banho</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para escola no horario</li>
+    </o1>
+
+    <!-- Lista Ordenada com numero romano minusculo -->
+     <ol type="i">
+        <li>Acordar</li>
+        <li>Tomar banho</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para escola no horario</li>
+     </ol>
+     <br>
+     <!-- Lista Ordenada com letras maiusculas -->
+     <ol type="A">
+        <li>Acordar</li>
+        <li>Tomar banho</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para escola no horario</li>
+     </ol>
+
+     <!-- Lista não ordenada -->
+      <ul> 
+        <li>Carvão</li>
+        <li>Carne</li>
+        <li>Bebidas</li>
+        <li>Arroz</li>
+      </ul>
+
+      
+     <!-- Lista dentro da lista -->
+     <ul> 
+        <li>Carne 
+            <ul>
+                <li>Picanha</li>
+                <li>Cupim</li>
+                <li>Ponta de peito</li>
+            </ul>
+        </li>
+      </ul>
+
+    <!-- Lista predefinida -->
+     <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para conteúdo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de estilização do Site</dd>
+        <dt>Javascript</dt>
+        <dd>Linguagem de programação</dd>
+     </dl>
+  
+    </body>
+</html>
