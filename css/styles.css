@@ -50,3 +50,85 @@ body{
    .cabecalho3{
     background-color: rgb(146, 14, 14);
    }
+
+   .formulario{
+    background-color: rgb(243, 131, 222);
+   }
+   .input-nome{
+    /*remove a borda do elemento*/
+    border: none;
+    border-radius: 5px;
+    margin-left:50px;
+    /*define a opacidade do elemento*/
+    opacity: 70%;
+   }
+   .botao{
+    background-color: aquamarine;
+    border: none;
+    padding: 6px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    /*Aplicando sombra no texto posição x,y, blur e o rgba que aplica com opacidade*/
+    text-shadow: 11px 1px rgba(rgb(248, 40, 40), rgb(40, 238, 40), rgb(43, 43, 212), alpha);
+    
+   }
+   .Checar{
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    /*modifica o tipo de cursor*/
+    cursor: pointer;
+    /*zerar as configurações de aparencia*/
+    appearance: none;
+    background-color: rgb(210, 224, 240);
+    border: 2px solid coral;
+    border-radius: 5px;
+   }
+   .checar:checked{
+    background-color: rgb(54, 237, 88);
+
+   }
+   .email{
+    width: 300px;
+    padding: 5px 5px;
+    margin-left: 5px;
+    border: 2px solid rgb(254, 255, 255);
+   }
+   .selecao{
+    appearance: none;
+    width: 300px;
+    padding: 4px;
+    font-size: 16px;
+    color:rgb(84, 203, 222);
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor:pointer;
+    /*sombra no input*/
+    box-shadow: 0 2px 5px rgba(0,0,0,0.8);
+   }
+
+.radio{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border:2px solid #d3421d;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* Pseudoclasse, quando o estado do objeto muda, ele atribui outras propriedades */
+.radio:checked
+
+.corpo{
+    width: 200px; 
+    height: 250px;
+    margin: 0 auto;
+    background: rgb(49,41,186);
+background: linear-gradient(90deg, rgba(49,41,186,1) 0%, rgba(63,186,17,1) 48%, rgba(0,255,231,1) 100%);
+}
+
+.corpo2{
+    width: 200px; 
+    height: 250px;
+    margin: 0 auto;
+}
