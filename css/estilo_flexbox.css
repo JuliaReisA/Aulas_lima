@@ -13,11 +13,96 @@
     max-width: 400px;
     margin: 0 auto;
     display: flex;
+    /*Define o tamanho do elemento e o espaço entre eles*/
 }
 
 .item{
-    background-color: aquamarine;
+    background-color: rgb(191, 127, 255);
     margin: 5px;
     text-align: center;
     color: aliceblue;
+}
+
+.flex > div > img {
+    height: 50px;
+    width: 50px;
+}
+
+.div-coluna{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+
+.secao{
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    background-color: brown;
+    /*Coloca um espaço entre os elementos*/
+    gap: 10px;
+    /*Quebra os elementos para outra linha,
+    caso nao haja espaço suficiente*/
+    flex-wrap: wrap;
+}
+
+.secao-imagem{
+    width: 200px;
+    height: 200px;
+}
+
+.alinhar-esquerda{
+    display: flex;
+    flex-direction: row;
+    /*Alinha o elemento ao inicio*/
+    justify-content: flex-start;
+}
+
+.alinhar-centro{
+    display: flex;
+    flex-direction: row;
+    /*Alinha o elemento ao centro*/
+    justify-content: center;
+}
+
+.alinhar-direita{
+    display: flex;
+    flex-direction: row;
+    /*Alinha os elementos ao centro*/
+    justify-content: flex-end;
+}
+.alinhar-entre{
+    display: flex;
+    flex-direction: row;
+    /*Coloca os elementos nas pontas w ajusta os elementos do centro*/
+    justify-content: space-between;
+}
+
+.alinhar-redor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /*Distribui os itens com espaço ao redor deles*/
+    justify-content: space-around;
+}
+
+.alinhar-coluna{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /*Distribui os itens com espaço ao redor deles*/
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: blue;
+}
+
+.alinhar-redor{
+    display: flex;
+    flex-direction: row;
+    /*Distribui os itens com espaço ao redor deles*/
+    height: 200px;
+    background-color: rgb(195, 26, 150);
+    align-items: center ;
+    justify-content: space-between;
 }
